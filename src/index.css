@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.order_table {
+  @apply table-auto border-collapse;
+}
+
+.order_table thead {
+  @apply text-white;
+}
+
+.order_table th {
+  @apply px-4 py-2 border-r border-gray-500;
+}
+
+.order_table td {
+  @apply px-4 py-2 border-r border-gray-500;
+}
+
+.order_table thead {
+  @apply bg-[#222152];
+}
+
+.order_table .even {
+  @apply bg-gray-100;
+}
+
+.order_table .odd {
+  @apply bg-white;
+}
+
+details[open] > summary {
+    list-style: none;
+}
+
+details > summary {
+    list-style: none;
+}
+
+details[open] > summary .ico-details {
+   @apply rotate-180 -translate-y-1
+}
+
+.details-container {
+  @apply shadow-sm py-4
+}

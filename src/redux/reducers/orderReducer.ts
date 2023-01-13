@@ -1,28 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { rejects } from "assert";
 
 export interface OrderInterface {
-    orderId: number;
-    customer: {
-        name: string;
-        email: string;
-        shippingAddress: string;
-    };
-    items: Array<{
-        name: string;
-        quantity: number;
-        price: number;
-    }>;
-    orderDate: Date;
-    totalAmount: number;
-    paymentMethod: string;
-    shippingMethod: string;
-    trackingNumber: string;
+    orderId: string;
+    type: string;
+    item: string;
+    category: string;
+    description: string;
     status: string;
-    shippingAddress: string;
-    discounts: number;
+    createdOn: Date;
+    pickDate: Date;
 }
-
 const initialState = {
     errorMsg: '',
     allOrders: [],

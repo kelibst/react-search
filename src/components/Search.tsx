@@ -5,11 +5,13 @@ import { ThunkDispatch } from 'redux-thunk'
 import {  setError, setOrders, setFilteredOrders } from '../redux/reducers/orderReducer'
 import { RootState } from '../redux/store'
 import { findOrdersById } from '../utils/utils'
+import Modal from './Layout/FilterModal'
 import OrderTable from './OrderTable'
 
 const Search = () => {
   const { allOrders, errorMsg, filteredOrders } = useSelector((state: RootState) => state.orders)
   const [itemNumbers, setItemNumbers] = useState<string[]>([])
+  const [showFilter, setshowFilter] = useState(false)
   const dispatch = useDispatch()
 
   const handleSubmit = (event: FormEvent) => {
@@ -35,9 +37,7 @@ const Search = () => {
     }
 };
 
- 
-  console.log(filteredOrders, 'filtered')
-  
+   
   return (
     <>
       <div className="flex justify-between shadow items-center">
@@ -58,6 +58,8 @@ const Search = () => {
             />
             <button>search</button>
           </form>
+          <button className="bg-white text-black" onClick={() => setshowFilter(true)}> + </button>
+          <Modal {...{ showFilter, setshowFilter }} />
         </div>
       </div>
       <main className="flex flex-col w-full h-full items-center justify-center gap-2">

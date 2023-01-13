@@ -1,603 +1,502 @@
 [
  {
- "orderId": 0,
- "customer": {
- "name": "John Doe 0",
- "email": "john.doe0@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 6", "quantity": 4, "price": 80 },
- { "name": "Product 8", "quantity": 4, "price": 38 }
- ],
- "orderDate": "2023-01-11T22:29:32.672Z",
- "totalAmount": 62,
- "paymentMethod": "VISA 6050",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 7175",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 29
+ "orderId": "0001",
+ "type": "CAO",
+ "item": "0001",
+ "category": "Category 1",
+ "description": "Description 1",
+ "status": "status 1",
+ "createdOn": "2020-07-13T11:34:36.419Z",
+ "pickDate": "2020-04-27T17:34:08.016Z"
  },
  {
- "orderId": 1,
- "customer": {
- "name": "John Doe 1",
- "email": "john.doe1@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 8", "quantity": 7, "price": 64 },
- { "name": "Product 3", "quantity": 4, "price": 76 }
- ],
- "orderDate": "2023-01-11T22:29:32.672Z",
- "totalAmount": 95,
- "paymentMethod": "VISA 4707",
- "shippingMethod": "Fedex",
- "trackingNumber": "FEDEX 3808",
- "status": "shipped",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 22
+ "orderId": "0002",
+ "type": "SFO",
+ "item": "0002",
+ "category": "Category 2",
+ "description": "Description 2",
+ "status": "status 2",
+ "createdOn": "2020-08-10T14:33:11.788Z",
+ "pickDate": "2020-12-27T17:00:33.527Z"
  },
  {
- "orderId": 2,
- "customer": {
- "name": "John Doe 2",
- "email": "john.doe2@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 9", "quantity": 5, "price": 36 },
- { "name": "Product 5", "quantity": 8, "price": 61 }
- ],
- "orderDate": "2023-01-11T22:29:32.673Z",
- "totalAmount": 70,
- "paymentMethod": "VISA 6226",
- "shippingMethod": "Fedex",
- "trackingNumber": "FEDEX 757",
- "status": "cancelled",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 84
+ "orderId": "0003",
+ "type": "EDF",
+ "item": "0003",
+ "category": "Category 3",
+ "description": "Description 3",
+ "status": "status 3",
+ "createdOn": "2020-12-16T22:42:20.598Z",
+ "pickDate": "2020-09-05T08:55:15.943Z"
  },
  {
- "orderId": 3,
- "customer": {
- "name": "John Doe 3",
- "email": "john.doe3@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 73", "quantity": 6, "price": 65 },
- { "name": "Product 4", "quantity": 8, "price": 12 }
- ],
- "orderDate": "2023-01-11T22:29:32.673Z",
- "totalAmount": 53,
- "paymentMethod": "VISA 8517",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 9231",
- "status": "cancelled",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 46
+ "orderId": "0004",
+ "type": "CAO",
+ "item": "0004",
+ "category": "Category 4",
+ "description": "Description 4",
+ "status": "status 4",
+ "createdOn": "2020-07-31T05:58:58.744Z",
+ "pickDate": "2020-10-18T12:53:39.868Z"
  },
  {
- "orderId": 4,
- "customer": {
- "name": "John Doe 4",
- "email": "john.doe4@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 8", "quantity": 6, "price": 4 },
- { "name": "Product 1", "quantity": 5, "price": 55 }
- ],
- "orderDate": "2023-01-11T22:29:32.673Z",
- "totalAmount": 40,
- "paymentMethod": "VISA 1002",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 477",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 83
+ "orderId": "0005",
+ "type": "SFO",
+ "item": "0005",
+ "category": "Category 5",
+ "description": "Description 5",
+ "status": "status 5",
+ "createdOn": "2020-08-19T05:14:22.296Z",
+ "pickDate": "2020-07-11T01:44:01.375Z"
  },
  {
- "orderId": 5,
- "customer": {
- "name": "John Doe 5",
- "email": "john.doe5@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 9", "quantity": 8, "price": 42 },
- { "name": "Product 3", "quantity": 8, "price": 88 }
- ],
- "orderDate": "2023-01-11T22:29:32.673Z",
- "totalAmount": 50,
- "paymentMethod": "VISA 6460",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 5736",
- "status": "delivered",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 12
+ "orderId": "0006",
+ "type": "EDF",
+ "item": "0006",
+ "category": "Category 6",
+ "description": "Description 6",
+ "status": "status 6",
+ "createdOn": "2020-09-29T10:05:27.818Z",
+ "pickDate": "2020-10-22T16:04:36.840Z"
  },
  {
- "orderId": 6,
- "customer": {
- "name": "John Doe 6",
- "email": "john.doe6@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 3", "quantity": 6, "price": 39 },
- { "name": "Product 8", "quantity": 9, "price": 3 }
- ],
- "orderDate": "2023-01-11T22:29:32.673Z",
- "totalAmount": 40,
- "paymentMethod": "VISA 9053",
- "shippingMethod": "UPS",
- "trackingNumber": "FEDEX 6298",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 7
+ "orderId": "0007",
+ "type": "CAO",
+ "item": "0007",
+ "category": "Category 7",
+ "description": "Description 7",
+ "status": "status 7",
+ "createdOn": "2020-12-12T03:43:07.613Z",
+ "pickDate": "2020-02-01T02:04:15.108Z"
  },
  {
- "orderId": 7,
- "customer": {
- "name": "John Doe 7",
- "email": "john.doe7@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 232", "quantity": 1, "price": 39 },
- { "name": "Product 5", "quantity": 2, "price": 95 }
- ],
- "orderDate": "2023-01-11T22:29:32.673Z",
- "totalAmount": 67,
- "paymentMethod": "VISA 9078",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 6607",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 55
+ "orderId": "0008",
+ "type": "SFO",
+ "item": "0008",
+ "category": "Category 8",
+ "description": "Description 8",
+ "status": "status 8",
+ "createdOn": "2020-05-11T11:35:22.194Z",
+ "pickDate": "2020-09-26T13:05:37.126Z"
  },
  {
- "orderId": 8,
- "customer": {
- "name": "John Doe 8",
- "email": "john.doe8@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 4", "quantity": 3, "price": 40 },
- { "name": "Product 9", "quantity": 5, "price": 83 }
- ],
- "orderDate": "2023-01-11T22:29:32.673Z",
- "totalAmount": 56,
- "paymentMethod": "VISA 5044",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 3361",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 85
+ "orderId": "0009",
+ "type": "EDF",
+ "item": "0009",
+ "category": "Category 9",
+ "description": "Description 9",
+ "status": "status 9",
+ "createdOn": "2020-05-21T07:45:43.420Z",
+ "pickDate": "2020-03-07T05:33:22.448Z"
  },
  {
- "orderId": 9,
- "customer": {
- "name": "John Doe 9",
- "email": "john.doe9@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 4", "quantity": 9, "price": 40 },
- { "name": "Product 1", "quantity": 7, "price": 27 }
- ],
- "orderDate": "2023-01-11T22:29:32.673Z",
- "totalAmount": 78,
- "paymentMethod": "VISA 438",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 5779",
- "status": "shipped",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 82
+ "orderId": "0010",
+ "type": "CAO",
+ "item": "0010",
+ "category": "Category 10",
+ "description": "Description 10",
+ "status": "status 10",
+ "createdOn": "2020-01-08T04:04:14.379Z",
+ "pickDate": "2020-09-01T03:34:52.970Z"
  },
  {
- "orderId": 10,
- "customer": {
- "name": "John Doe 10",
- "email": "john.doe10@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 5", "quantity": 5, "price": 21 },
- { "name": "Product 6", "quantity": 9, "price": 80 }
- ],
- "orderDate": "2023-01-11T22:29:32.673Z",
- "totalAmount": 12,
- "paymentMethod": "VISA 2485",
- "shippingMethod": "UPS",
- "trackingNumber": "FEDEX 856",
- "status": "delivered",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 52
+ "orderId": "0011",
+ "type": "SFO",
+ "item": "0011",
+ "category": "Category 11",
+ "description": "Description 11",
+ "status": "status 11",
+ "createdOn": "2020-06-23T16:57:22.798Z",
+ "pickDate": "2020-06-07T21:13:09.246Z"
  },
  {
- "orderId": 11,
- "customer": {
- "name": "John Doe 11",
- "email": "john.doe11@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 1", "quantity": 7, "price": 86 },
- { "name": "Product 3", "quantity": 2, "price": 55 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 34,
- "paymentMethod": "VISA 2804",
- "shippingMethod": "UPS",
- "trackingNumber": "FEDEX 8250",
- "status": "delivered",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 87
+ "orderId": "0012",
+ "type": "EDF",
+ "item": "0012",
+ "category": "Category 12",
+ "description": "Description 12",
+ "status": "status 12",
+ "createdOn": "2020-02-20T10:22:13.112Z",
+ "pickDate": "2020-01-24T15:49:21.435Z"
  },
  {
- "orderId": 12,
- "customer": {
- "name": "John Doe 12",
- "email": "john.doe12@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 9", "quantity": 1, "price": 37 },
- { "name": "Product 226", "quantity": 7, "price": 6 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 59,
- "paymentMethod": "VISA 790",
- "shippingMethod": "UPS",
- "trackingNumber": "FEDEX 4844",
- "status": "shipped",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 98
+ "orderId": "0013",
+ "type": "CAO",
+ "item": "0013",
+ "category": "Category 13",
+ "description": "Description 13",
+ "status": "status 13",
+ "createdOn": "2020-01-31T17:20:04.596Z",
+ "pickDate": "2020-06-23T02:18:53.757Z"
  },
  {
- "orderId": 13,
- "customer": {
- "name": "John Doe 13",
- "email": "john.doe13@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 3", "quantity": 7, "price": 79 },
- { "name": "Product 74", "quantity": 5, "price": 57 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 88,
- "paymentMethod": "VISA 1198",
- "shippingMethod": "Fedex",
- "trackingNumber": "FEDEX 3589",
- "status": "cancelled",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 10
+ "orderId": "0014",
+ "type": "SFO",
+ "item": "0014",
+ "category": "Category 14",
+ "description": "Description 14",
+ "status": "status 14",
+ "createdOn": "2020-08-06T03:35:28.749Z",
+ "pickDate": "2020-04-12T14:41:54.538Z"
  },
  {
- "orderId": 14,
- "customer": {
- "name": "John Doe 14",
- "email": "john.doe14@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 8", "quantity": 4, "price": 76 },
- { "name": "Product 4", "quantity": 2, "price": 71 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 51,
- "paymentMethod": "VISA 6079",
- "shippingMethod": "UPS",
- "trackingNumber": "FEDEX 4508",
- "status": "cancelled",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 60
+ "orderId": "0015",
+ "type": "EDF",
+ "item": "0015",
+ "category": "Category 15",
+ "description": "Description 15",
+ "status": "status 15",
+ "createdOn": "2020-08-05T05:07:46.506Z",
+ "pickDate": "2020-01-16T12:42:30.562Z"
  },
  {
- "orderId": 15,
- "customer": {
- "name": "John Doe 15",
- "email": "john.doe15@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 1", "quantity": 2, "price": 92 },
- { "name": "Product 6", "quantity": 9, "price": 47 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 95,
- "paymentMethod": "VISA 3276",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 5580",
- "status": "cancelled",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 68
+ "orderId": "0016",
+ "type": "CAO",
+ "item": "0016",
+ "category": "Category 16",
+ "description": "Description 16",
+ "status": "status 16",
+ "createdOn": "2020-03-29T08:24:28.894Z",
+ "pickDate": "2020-12-08T10:21:42.912Z"
  },
  {
- "orderId": 16,
- "customer": {
- "name": "John Doe 16",
- "email": "john.doe16@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 8", "quantity": 6, "price": 98 },
- { "name": "Product 5", "quantity": 1, "price": 81 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 48,
- "paymentMethod": "VISA 9804",
- "shippingMethod": "UPS",
- "trackingNumber": "FEDEX 8214",
- "status": "shipped",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 39
+ "orderId": "0017",
+ "type": "SFO",
+ "item": "0017",
+ "category": "Category 17",
+ "description": "Description 17",
+ "status": "status 17",
+ "createdOn": "2020-06-27T19:55:56.515Z",
+ "pickDate": "2020-08-04T16:31:52.443Z"
  },
  {
- "orderId": 17,
- "customer": {
- "name": "John Doe 17",
- "email": "john.doe17@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 4", "quantity": 7, "price": 28 },
- { "name": "Product 2122", "quantity": 7, "price": 11 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 77,
- "paymentMethod": "VISA 844",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 4400",
- "status": "shipped",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 6
+ "orderId": "0018",
+ "type": "EDF",
+ "item": "0018",
+ "category": "Category 18",
+ "description": "Description 18",
+ "status": "status 18",
+ "createdOn": "2020-03-05T20:39:41.009Z",
+ "pickDate": "2020-03-13T10:58:09.570Z"
  },
  {
- "orderId": 18,
- "customer": {
- "name": "John Doe 18",
- "email": "john.doe18@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 3", "quantity": 2, "price": 11 },
- { "name": "Product 4", "quantity": 7, "price": 75 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 23,
- "paymentMethod": "VISA 7576",
- "shippingMethod": "UPS",
- "trackingNumber": "FEDEX 9578",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 4
+ "orderId": "0019",
+ "type": "CAO",
+ "item": "0019",
+ "category": "Category 19",
+ "description": "Description 19",
+ "status": "status 19",
+ "createdOn": "2020-07-01T14:02:20.415Z",
+ "pickDate": "2020-05-28T14:06:30.674Z"
  },
  {
- "orderId": 19,
- "customer": {
- "name": "John Doe 19",
- "email": "john.doe19@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 8", "quantity": 7, "price": 79 },
- { "name": "Product 4", "quantity": 3, "price": 66 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 42,
- "paymentMethod": "VISA 6465",
- "shippingMethod": "Fedex",
- "trackingNumber": "FEDEX 9435",
- "status": "delivered",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 60
+ "orderId": "0020",
+ "type": "SFO",
+ "item": "0020",
+ "category": "Category 20",
+ "description": "Description 20",
+ "status": "status 20",
+ "createdOn": "2020-09-20T05:24:00.662Z",
+ "pickDate": "2020-01-13T02:51:48.253Z"
  },
  {
- "orderId": 20,
- "customer": {
- "name": "John Doe 20",
- "email": "john.doe20@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 2556", "quantity": 1, "price": 48 },
- { "name": "Product 297", "quantity": 6, "price": 28 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 75,
- "paymentMethod": "VISA 1222",
- "shippingMethod": "DHL",
- "trackingNumber": "FEDEX 5694",
- "status": "shipped",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 66
+ "orderId": "0021",
+ "type": "EDF",
+ "item": "0021",
+ "category": "Category 21",
+ "description": "Description 21",
+ "status": "status 21",
+ "createdOn": "2020-01-10T21:38:14.738Z",
+ "pickDate": "2020-03-01T08:11:13.287Z"
  },
  {
- "orderId": 21,
- "customer": {
- "name": "John Doe 21",
- "email": "john.doe21@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 8", "quantity": 7, "price": 74 },
- { "name": "Product 3", "quantity": 7, "price": 53 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 25,
- "paymentMethod": "VISA 7170",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 9550",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 4
+ "orderId": "0022",
+ "type": "CAO",
+ "item": "0022",
+ "category": "Category 22",
+ "description": "Description 22",
+ "status": "status 22",
+ "createdOn": "2020-12-06T15:08:43.967Z",
+ "pickDate": "2020-12-29T22:52:52.537Z"
  },
  {
- "orderId": 22,
- "customer": {
- "name": "John Doe 22",
- "email": "john.doe22@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 5", "quantity": 2, "price": 33 },
- { "name": "Product 3", "quantity": 7, "price": 30 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 10,
- "paymentMethod": "VISA 7555",
- "shippingMethod": "Fedex",
- "trackingNumber": "FEDEX 2406",
- "status": "shipped",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 92
+ "orderId": "0023",
+ "type": "SFO",
+ "item": "0023",
+ "category": "Category 23",
+ "description": "Description 23",
+ "status": "status 23",
+ "createdOn": "2020-02-13T21:49:43.638Z",
+ "pickDate": "2020-04-29T06:06:17.692Z"
  },
  {
- "orderId": 23,
- "customer": {
- "name": "John Doe 23",
- "email": "john.doe23@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 5", "quantity": 1, "price": 23 },
- { "name": "Product 75", "quantity": 7, "price": 13 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 88,
- "paymentMethod": "VISA 6677",
- "shippingMethod": "USPS",
- "trackingNumber": "FEDEX 6224",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 45
+ "orderId": "0024",
+ "type": "EDF",
+ "item": "0024",
+ "category": "Category 24",
+ "description": "Description 24",
+ "status": "status 24",
+ "createdOn": "2020-10-07T09:02:50.902Z",
+ "pickDate": "2020-02-22T19:25:41.258Z"
  },
  {
- "orderId": 24,
- "customer": {
- "name": "John Doe 24",
- "email": "john.doe24@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 5", "quantity": 2, "price": 65 },
- { "name": "Product 3", "quantity": 9, "price": 74 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 86,
- "paymentMethod": "VISA 7017",
- "shippingMethod": "UPS",
- "trackingNumber": "FEDEX 6955",
- "status": "cancelled",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 59
+ "orderId": "0025",
+ "type": "CAO",
+ "item": "0025",
+ "category": "Category 25",
+ "description": "Description 25",
+ "status": "status 25",
+ "createdOn": "2020-08-22T01:13:41.347Z",
+ "pickDate": "2020-06-04T05:14:17.288Z"
  },
  {
- "orderId": 25,
- "customer": {
- "name": "John Doe 25",
- "email": "john.doe25@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 71", "quantity": 6, "price": 8 },
- { "name": "Product 72", "quantity": 5, "price": 17 }
- ],
- "orderDate": "2023-01-11T22:29:32.674Z",
- "totalAmount": 84,
- "paymentMethod": "VISA 7199",
- "shippingMethod": "Fedex",
- "trackingNumber": "FEDEX 6643",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 93
+ "orderId": "0026",
+ "type": "SFO",
+ "item": "0026",
+ "category": "Category 26",
+ "description": "Description 26",
+ "status": "status 26",
+ "createdOn": "2020-05-21T00:19:20.404Z",
+ "pickDate": "2020-04-17T17:06:14.069Z"
  },
  {
- "orderId": 26,
- "customer": {
- "name": "John Doe 26",
- "email": "john.doe26@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 6", "quantity": 1, "price": 22 },
- { "name": "Product 5", "quantity": 2, "price": 92 }
- ],
- "orderDate": "2023-01-11T22:29:32.675Z",
- "totalAmount": 9,
- "paymentMethod": "VISA 3864",
- "shippingMethod": "Fedex",
- "trackingNumber": "FEDEX 9818",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 62
+ "orderId": "0027",
+ "type": "EDF",
+ "item": "0027",
+ "category": "Category 27",
+ "description": "Description 27",
+ "status": "status 27",
+ "createdOn": "2020-04-27T19:07:45.662Z",
+ "pickDate": "2020-02-05T10:37:07.301Z"
  },
  {
- "orderId": 27,
- "customer": {
- "name": "John Doe 27",
- "email": "john.doe27@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 9", "quantity": 7, "price": 84 },
- { "name": "Product 6", "quantity": 1, "price": 51 }
- ],
- "orderDate": "2023-01-11T22:29:32.675Z",
- "totalAmount": 35,
- "paymentMethod": "VISA 5963",
- "shippingMethod": "Fedex",
- "trackingNumber": "FEDEX 8825",
- "status": "cancelled",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 74
+ "orderId": "0028",
+ "type": "CAO",
+ "item": "0028",
+ "category": "Category 28",
+ "description": "Description 28",
+ "status": "status 28",
+ "createdOn": "2020-12-11T22:41:11.352Z",
+ "pickDate": "2020-12-08T11:20:20.707Z"
  },
  {
- "orderId": 28,
- "customer": {
- "name": "John Doe 28",
- "email": "john.doe28@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
- },
- "items": [
- { "name": "Product 1", "quantity": 2, "price": 7 },
- { "name": "Product 4", "quantity": 7, "price": 53 }
- ],
- "orderDate": "2023-01-11T22:29:32.675Z",
- "totalAmount": 68,
- "paymentMethod": "VISA 2511",
- "shippingMethod": "UPS",
- "trackingNumber": "FEDEX 4215",
- "status": "shipped",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 14
+ "orderId": "0029",
+ "type": "SFO",
+ "item": "0029",
+ "category": "Category 29",
+ "description": "Description 29",
+ "status": "status 29",
+ "createdOn": "2020-02-14T21:58:32.352Z",
+ "pickDate": "2020-09-09T01:18:48.568Z"
  },
  {
- "orderId": 29,
- "customer": {
- "name": "John Doe 29",
- "email": "john.doe29@example.com",
- "shippingAddress": "123 Main St, Anytown USA"
+ "orderId": "0030",
+ "type": "EDF",
+ "item": "0030",
+ "category": "Category 30",
+ "description": "Description 30",
+ "status": "status 30",
+ "createdOn": "2020-10-31T09:25:25.310Z",
+ "pickDate": "2020-07-03T00:52:20.889Z"
  },
- "items": [
- { "name": "Product 9", "quantity": 4, "price": 10 },
- { "name": "Product 6", "quantity": 1, "price": 62 }
- ],
- "orderDate": "2023-01-11T22:29:32.675Z",
- "totalAmount": 36,
- "paymentMethod": "VISA 3237",
- "shippingMethod": "DHL",
- "trackingNumber": "FEDEX 3614",
- "status": "pending",
- "shippingAddress": "123 Main St, Anytown USA",
- "discounts": 88
+ {
+ "orderId": "0031",
+ "type": "CAO",
+ "item": "0031",
+ "category": "Category 31",
+ "description": "Description 31",
+ "status": "status 31",
+ "createdOn": "2020-03-23T11:54:15.734Z",
+ "pickDate": "2020-08-03T22:31:22.024Z"
+ },
+ {
+ "orderId": "0032",
+ "type": "SFO",
+ "item": "0032",
+ "category": "Category 32",
+ "description": "Description 32",
+ "status": "status 32",
+ "createdOn": "2020-10-03T05:13:15.246Z",
+ "pickDate": "2020-07-25T23:51:20.241Z"
+ },
+ {
+ "orderId": "0033",
+ "type": "EDF",
+ "item": "0033",
+ "category": "Category 33",
+ "description": "Description 33",
+ "status": "status 33",
+ "createdOn": "2020-01-09T08:58:35.734Z",
+ "pickDate": "2020-09-28T23:35:08.022Z"
+ },
+ {
+ "orderId": "0034",
+ "type": "CAO",
+ "item": "0034",
+ "category": "Category 34",
+ "description": "Description 34",
+ "status": "status 34",
+ "createdOn": "2020-05-25T06:42:52.119Z",
+ "pickDate": "2020-04-07T09:23:57.839Z"
+ },
+ {
+ "orderId": "0035",
+ "type": "SFO",
+ "item": "0035",
+ "category": "Category 35",
+ "description": "Description 35",
+ "status": "status 35",
+ "createdOn": "2020-09-21T07:07:49.232Z",
+ "pickDate": "2020-05-27T23:18:46.702Z"
+ },
+ {
+ "orderId": "0036",
+ "type": "EDF",
+ "item": "0036",
+ "category": "Category 36",
+ "description": "Description 36",
+ "status": "status 36",
+ "createdOn": "2020-10-14T04:15:57.378Z",
+ "pickDate": "2020-09-16T00:03:47.539Z"
+ },
+ {
+ "orderId": "0037",
+ "type": "CAO",
+ "item": "0037",
+ "category": "Category 37",
+ "description": "Description 37",
+ "status": "status 37",
+ "createdOn": "2020-07-14T07:45:13.116Z",
+ "pickDate": "2020-07-02T04:34:32.540Z"
+ },
+ {
+ "orderId": "0038",
+ "type": "SFO",
+ "item": "0038",
+ "category": "Category 38",
+ "description": "Description 38",
+ "status": "status 38",
+ "createdOn": "2020-01-02T04:51:58.998Z",
+ "pickDate": "2020-07-28T13:26:35.307Z"
+ },
+ {
+ "orderId": "0039",
+ "type": "EDF",
+ "item": "0039",
+ "category": "Category 39",
+ "description": "Description 39",
+ "status": "status 39",
+ "createdOn": "2020-06-19T19:26:01.250Z",
+ "pickDate": "2020-02-05T00:12:21.500Z"
+ },
+ {
+ "orderId": "0040",
+ "type": "CAO",
+ "item": "0040",
+ "category": "Category 40",
+ "description": "Description 40",
+ "status": "status 40",
+ "createdOn": "2020-03-26T05:53:55.916Z",
+ "pickDate": "2020-03-26T14:57:56.719Z"
+ },
+ {
+ "orderId": "0041",
+ "type": "SFO",
+ "item": "0041",
+ "category": "Category 41",
+ "description": "Description 41",
+ "status": "status 41",
+ "createdOn": "2020-01-28T18:47:39.556Z",
+ "pickDate": "2020-01-10T18:08:44.607Z"
+ },
+ {
+ "orderId": "0042",
+ "type": "EDF",
+ "item": "0042",
+ "category": "Category 42",
+ "description": "Description 42",
+ "status": "status 42",
+ "createdOn": "2020-05-27T16:15:48.590Z",
+ "pickDate": "2020-03-13T10:32:26.986Z"
+ },
+ {
+ "orderId": "0043",
+ "type": "CAO",
+ "item": "0043",
+ "category": "Category 43",
+ "description": "Description 43",
+ "status": "status 43",
+ "createdOn": "2020-03-30T10:19:05.162Z",
+ "pickDate": "2020-09-30T19:44:42.073Z"
+ },
+ {
+ "orderId": "0044",
+ "type": "SFO",
+ "item": "0044",
+ "category": "Category 44",
+ "description": "Description 44",
+ "status": "status 44",
+ "createdOn": "2020-05-14T22:48:53.412Z",
+ "pickDate": "2020-08-08T23:04:58.173Z"
+ },
+ {
+ "orderId": "0045",
+ "type": "EDF",
+ "item": "0045",
+ "category": "Category 45",
+ "description": "Description 45",
+ "status": "status 45",
+ "createdOn": "2020-03-12T08:29:53.562Z",
+ "pickDate": "2020-01-29T16:35:20.523Z"
+ },
+ {
+ "orderId": "0046",
+ "type": "CAO",
+ "item": "0046",
+ "category": "Category 46",
+ "description": "Description 46",
+ "status": "status 46",
+ "createdOn": "2020-01-29T05:26:11.370Z",
+ "pickDate": "2020-04-16T17:50:08.037Z"
+ },
+ {
+ "orderId": "0047",
+ "type": "SFO",
+ "item": "0047",
+ "category": "Category 47",
+ "description": "Description 47",
+ "status": "status 47",
+ "createdOn": "2020-09-21T19:11:59.650Z",
+ "pickDate": "2020-11-29T03:03:35.037Z"
+ },
+ {
+ "orderId": "0048",
+ "type": "EDF",
+ "item": "0048",
+ "category": "Category 48",
+ "description": "Description 48",
+ "status": "status 48",
+ "createdOn": "2020-02-16T12:20:16.363Z",
+ "pickDate": "2020-01-18T22:51:01.934Z"
+ },
+ {
+ "orderId": "0049",
+ "type": "CAO",
+ "item": "0049",
+ "category": "Category 49",
+ "description": "Description 49",
+ "status": "status 49",
+ "createdOn": "2020-09-26T16:04:35.510Z",
+ "pickDate": "2020-05-04T15:36:52.954Z"
+ },
+ {
+ "orderId": "0050",
+ "type": "SFO",
+ "item": "0050",
+ "category": "Category 50",
+ "description": "Description 50",
+ "status": "status 50",
+ "createdOn": "2020-08-09T23:57:15.550Z",
+ "pickDate": "2020-09-27T09:45:56.318Z"
  }
 ]
-
