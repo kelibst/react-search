@@ -13,7 +13,10 @@ export interface OrderInterface {
 const initialState = {
     errorMsg: '',
     allOrders: [],
-    filteredOrders: []
+    filteredOrders: [],
+    itemNumbers: [],
+    orderNumbers: [],
+    orderTypes: []
 }
 
 
@@ -28,12 +31,19 @@ export const orderSlice = createSlice({
             state.errorMsg = action.payload
         },
         setFilteredOrders: (state, action) => {
-            console.log(action, 'action');
-
             state.filteredOrders = action.payload
+        },
+        setItemNumbers: (state, action) => {
+            state.itemNumbers = action.payload
+        },
+        setOrderNumbers: (state, action) => {
+            state.orderNumbers = action.payload
+        },
+        setOrderTypes: (state, action) => {
+            state.orderTypes = action.payload
         }
     }
 })
 
-export const { setOrders, setError, setFilteredOrders } = orderSlice.actions
+export const { setOrders, setError, setFilteredOrders, setItemNumbers, setOrderNumbers } = orderSlice.actions
 export default orderSlice.reducer

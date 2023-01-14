@@ -1,13 +1,16 @@
 import Search from "../Search";
+import Breadcrumb from "./Breadcrumb";
 import MenuBar from "./MenuBar";
-const Layout = () => {
+
+const Layout = ({children}) => {
   return (
-    <div className="flex">
+    <div className="">
       <MenuBar />
-      <div className="w-full">
-        <div className="menu_header bg-slate-300">Home / DC / Item</div>
-        <Search />
-      </div>
+      <header className="ml-44 h-full">
+        <Breadcrumb pages={["Home", "OC"]} currentPage="Item search" />
+        {children}
+      </header>
+     
     </div>
   );
 };

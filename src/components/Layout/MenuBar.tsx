@@ -1,11 +1,9 @@
-import React from "react";
-
 const MenuBar = () => {
   return (
-    <div className="left_side_menu w-32 bg-[#00152F] h-[100vh] text-white p-2">
+    <div className="fixed h-full top-0 left-0 w-44 bg-darkPrimary  text-white p-2">
       <div>Logo</div>
       <nav>
-        <ul>
+        <ul className="flex flex-col mt-4 gap-4 ">
           <li>
             i <a href="#">Item search</a>
           </li>
