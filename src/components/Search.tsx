@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { ThunkDispatch } from 'redux-thunk'
 import { setError, setOrders, setFilteredOrders, setItemNumbers } from '../redux/reducers/orderReducer'
 import { RootState } from '../redux/store'
-import { findOrdersById } from '../utils/utils'
+import { findOrdersById, ITEM_REGEX } from '../utils/utils'
 import Modal from './Layout/FilterModal'
 import OrderTable from './OrderTable'
 import { BsBookmark, BsFilter, BsPlusLg, BsSearch } from "react-icons/bs";
@@ -13,6 +13,8 @@ const Search = () => {
   const { allOrders, errorMsg, filteredOrders, itemNumbers, orderNumbers } = useSelector((state: RootState) => state.orders)
   // const [itemNumbers, setItemNumbers] = useState<string[]>([])
   const [showFilter, setshowFilter] = useState(false)
+  const [isValidItem, setIsValidItem] = useState(false)
+  const [isFocus, setIsFocus] = useState(false)
   const dispatch = useDispatch()
 
   const handleSubmit = (event: React.FormEvent) => {
@@ -51,12 +53,20 @@ const Search = () => {
               type="text"
               placeholder='Search by item # Order #'
               className="py-2 px-3 rounded sm:text-sm  border-2 outline-none"
-              onChange={
-                (e) => {
-                  dispatch(setItemNumbers(e.target.value.split(",")))
-                }
-              }
+              onChange={(e) => {
+                dispatch(setItemNumbers(e.target.value.split(","))) ;
+                setIsValidItem(
+                  ITEM_REGEX.test(itemNumbers[itemNumbers.length - 1])
+                );
+              }}
+              onFocus={() => setIsFocus(true)}
+              onBlur={() => setIsFocus(false)}
             />
+            {!isValidItem && isFocus && (
+                <p className="form-input-helper text-red-500 text-xs">
+                  item must be at least 4 digits (Ex. 0001)
+                </p>
+              )}
           </form>
 
           <div className="inset-y-0 flex gap-2 items-center">

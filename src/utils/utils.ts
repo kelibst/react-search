@@ -33,4 +33,8 @@ const filterOrders = (
     result = [...new Set(result)];
 };
 
-export { findOrdersById, filterOrders }
+
+const ITEM_REGEX = /^\d{4,}$/;
+const ORDER_ID_REGEX = /^\d{4,}$/;
+
+export { findOrdersById, filterOrders, ITEM_REGEX, ORDER_ID_REGEX }
