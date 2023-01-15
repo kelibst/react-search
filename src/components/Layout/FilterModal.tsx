@@ -1,12 +1,13 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { BiFilter } from "react-icons/bi";
 import { FaAngleDown } from "react-icons/fa";
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { setItemNumbers } from '../../redux/reducers/orderReducer';
+import { setFilteredOrders, setOrderTypes, setItemNumbers, setOrderNumbers } from '../../redux/reducers/orderReducer';
 import { RootState } from '../../redux/store';
-import { ITEM_REGEX } from '../../utils/utils';
+import { filterSearch, ITEM_REGEX } from '../../utils/utils';
+import CheckBoxes from './CheckBoxes';
 
 interface Props {
   showFilter: boolean;
@@ -15,18 +16,17 @@ interface Props {
 
 
 const Modal: React.FC<Props> = ({ showFilter, setshowFilter }) => {
-  const { allOrders, errorMsg, filteredOrders, itemNumbers, orderNumbers } = useSelector((state: RootState) => state.orders)
+  const { allOrders, itemNumbers, orderNumbers, orderTypes } = useSelector((state: RootState) => state.orders)
+  
   const dispatch = useDispatch()
+
   const [isValidItem, setisValidItem] = useState(false)
-  const [isValidOrder, setisValidOrder] = useState(false)
   const [isItemInputFocus, setIsItemInputFocus] = useState(false)
-  const [isOrderInputFocus, setIsOrderInputFocus] = useState(false)
+
   return createPortal(
-    
     <div>
       {showFilter && (
         <div className="fixed top-0 right-0 h-screen w-screen bg-black bg-opacity-75 z-40 flex justify-end" onClick={() => {
-
           setshowFilter(false)
         }}>
           <div onClick={(e) => {
@@ -48,6 +48,9 @@ const Modal: React.FC<Props> = ({ showFilter, setshowFilter }) => {
                 <form className='p-4' onSubmit={(e: React.FormEvent) => {
                   e.preventDefault()
                   console.log("submit")
+                  const data = filterSearch(allOrders, itemNumbers, orderNumbers, orderTypes)
+                  console.log(data, 'data');
+                  data.length && dispatch(setFilteredOrders(data))
                 }}>
                   <details className='cursor-pointer details-container'>
                     <summary className='summary-det'><span className='font-bold'>Item</span> <span className="ico-details"><FaAngleDown /></span> </summary>
@@ -55,12 +58,11 @@ const Modal: React.FC<Props> = ({ showFilter, setshowFilter }) => {
                       className="form-input border-2 h-28 mt-1 block w-full {isValidItem && 'border-red-500'}"
                       placeholder="Item ID (Ex: 0001)"
                       onChange={(e) => {
-                      dispatch(setItemNumbers(e.target.value.split(","))) ;
+                        dispatch(setItemNumbers(e.target.value.split(",")));
                       setisValidItem(
                         ITEM_REGEX.test(itemNumbers[itemNumbers.length - 1])
                       );
                       }}
-                    required
                     onFocus={() => setIsItemInputFocus(true)}
                     onBlur={() => setIsItemInputFocus(false)} />
                      {!isValidItem && isItemInputFocus && (
@@ -73,32 +75,15 @@ const Modal: React.FC<Props> = ({ showFilter, setshowFilter }) => {
                     <summary className='summary-det'><span className='font-bold'>Order #</span> <span className="ico-details"><FaAngleDown /></span> </summary>
                     <input type="text" className="form-input border-2 border-black h-28 mt-1 block w-full" placeholder="Order ID (Ex: 0001)"
                      onChange={(e) => {
-                      dispatch(setItemNumbers(e.target.value.split(","))) ;
+                      dispatch(setOrderNumbers(e.target.value.split(","))) ;
                       setisValidItem(
-                        ITEM_REGEX.test(itemNumbers[itemNumbers.length - 1])
+                        ITEM_REGEX.test(orderNumbers[orderNumbers.length - 1])
                       );
                       }}
-                    required
                     />
                   </details>
 
-                  <details className='cursor-pointer details-container'>
-                    <summary className='summary-det'><span className='font-bold'>Type</span> <span className="ico-details"><FaAngleDown /></span> </summary>
-                    <div className='pt-4'>
-                      <input type="checkbox" id='checkall'  className="type-checkbox" />
-                    <label htmlFor="checkall" className='ml-3 text-sm cursor-pointer'> Show all</label>
-                    </div>
-
-                    <div className='pt-4'>
-                      <input type="checkbox" id='CAO' className="type-checkbox" />
-                    <label htmlFor="CAO" className='ml-3 text-sm cursor-pointer'> CAO</label>
-                    </div>
-
-                    <div className='pt-4'>
-                      <input type="checkbox" id='EDF' className="type-checkbox" />
-                    <label htmlFor="EDF" className='ml-3 text-sm cursor-pointer'>EDF</label>
-                    </div>    
-                  </details>
+                  <CheckBoxes options={['Show All', 'CAO', 'EDF', 'SFO']} />
 
                   <details className='cursor-pointer details-container'>
                     <summary className='summary-det'><span className='font-bold'>Category</span> <span className="ico-details"><FaAngleDown /></span> </summary>
@@ -122,10 +107,11 @@ const Modal: React.FC<Props> = ({ showFilter, setshowFilter }) => {
 
                   <div className="absolute w-11/12  bottom-0 block">
                     <button className="lightGray text-primary py-2 px-4 float-left" onClick={(e) => {
-                      
+                      console.log(e);
+                  
                     }
                     }>Cancel</button>
-                    <button disabled={!isValidItem && !isValidOrder} className="bg-primary font-bold disabled:bg-gray-300 disabled:text-darkPrimary text-white py-2 px-4 hover:bg-blue-600 float-right">Apply</button>
+                    <button type='submit' disabled={!isValidItem} className="bg-primary font-bold disabled:bg-gray-300 disabled:text-darkPrimary text-white py-2 px-4 hover:bg-blue-600 float-right">Apply</button>
                   </div>
 
                 </form>

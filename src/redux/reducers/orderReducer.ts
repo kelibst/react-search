@@ -10,7 +10,15 @@ export interface OrderInterface {
     createdOn: Date;
     pickDate: Date;
 }
-const initialState = {
+export interface initialStateInterface {
+    errorMsg: string,
+    allOrders: OrderInterface[],
+    filteredOrders: OrderInterface[],
+    itemNumbers: string[],
+    orderNumbers: string[],
+    orderTypes: string[]
+}
+const initialState: initialStateInterface = {
     errorMsg: '',
     allOrders: [],
     filteredOrders: [],
@@ -45,5 +53,5 @@ export const orderSlice = createSlice({
     }
 })
 
-export const { setOrders, setError, setFilteredOrders, setItemNumbers, setOrderNumbers } = orderSlice.actions
+export const { setOrders, setError, setFilteredOrders, setItemNumbers, setOrderNumbers, setOrderTypes } = orderSlice.actions
 export default orderSlice.reducer

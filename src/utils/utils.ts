@@ -6,12 +6,14 @@ const findOrdersById = (orders: OrderInterface[], ids: string[]) => {
     return result;
 };
 
-const filterOrders = (
+const filterSearch = (
     orders: OrderInterface[],
     itemNumbers: string[],
     orderNumbers: string[],
     orderTypes: string[]
 ) => {
+    console.log(orderTypes);
+
     let result: OrderInterface[] = [];
     if (itemNumbers.length > 0) {
         result = orders.filter((order) =>
@@ -30,11 +32,12 @@ const filterOrders = (
             orders.filter((order) => orderTypes.includes(order.type))
         );
     }
-    result = [...new Set(result)];
+    return result = [...new Set(result)];
 };
+
 
 
 const ITEM_REGEX = /^\d{4,}$/;
 const ORDER_ID_REGEX = /^\d{4,}$/;
 
-export { findOrdersById, filterOrders, ITEM_REGEX, ORDER_ID_REGEX }
+export { findOrdersById, filterSearch, ITEM_REGEX, ORDER_ID_REGEX }
