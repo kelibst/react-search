@@ -36,8 +36,8 @@ const filterSearch = (
 };
 
 
+const ITEM_REGEX = /^\d{3}$/;
+const ORDER_ID_REGEX = /^\d{3}$/;
 
-const ITEM_REGEX = /^\d{4,}$/;
-const ORDER_ID_REGEX = /^\d{4,}$/;
 
 export { findOrdersById, filterSearch, ITEM_REGEX, ORDER_ID_REGEX }

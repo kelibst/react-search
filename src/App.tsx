@@ -6,7 +6,7 @@ import { store } from "./redux/store";
 function App() {
   return (
     <Provider store={store}>
-      <div>
+      <div className="h-[100vh]">
         <Layout>
           <Search />
         </Layout>

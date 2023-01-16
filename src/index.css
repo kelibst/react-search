@@ -7,7 +7,7 @@
 }
 
 .order_table thead {
-  @apply text-white;
+  @apply text-white bg-[#222152];
 }
 
 .order_table th {
@@ -16,10 +16,6 @@
 
 .order_table td {
   @apply px-4 py-2 border-r border-gray-500;
-}
-
-.order_table thead {
-  @apply bg-[#222152];
 }
 
 .order_table .even {
@@ -31,32 +27,33 @@
 }
 
 details[open] > summary {
-    list-style: none;
+  list-style: none;
 }
 
 details > summary {
-    list-style: none;
+  list-style: none;
 }
 
 details[open] > summary .ico-details {
-   @apply rotate-180 -translate-y-1
+  @apply rotate-180 -translate-y-1;
 }
 
 .details-container {
-  @apply shadow-sm py-4 transition-all
-}
-.form-input {
-  @apply valid:border-green-500 required:border-red-500 default:ring-2 
-}
-.summary-det {
-  @apply flex justify-between mb-2
+  @apply shadow-sm py-4 transition-all;
 }
 
+.form-input {
+  @apply valid:border-green-500 required:border-red-500 default:ring-2;
+}
+
+.summary-det {
+  @apply flex justify-between mb-2;
+}
 
 .type-checkbox {
-  @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600
+  @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
 }
 
 .search-btn {
-  @apply text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-700 p-2 rounded
+  @apply text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-700 p-2 rounded;
 }

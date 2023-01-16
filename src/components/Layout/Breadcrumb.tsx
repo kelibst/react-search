@@ -13,7 +13,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ pages, currentPage }) => {
         {
             pages.map((page, index) => (
             <>
-            <li key= { index }>
+            <li key= {`${index}-page`}>
                 <a className="text-xs" href={`/${page}`}> { page } </a>
             </li>
             < span className = "text-primary text-lg">&#62; </span>

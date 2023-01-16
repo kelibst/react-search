@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { BiFilter } from "react-icons/bi";
 import { FaAngleDown } from "react-icons/fa";
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { setFilteredOrders, setOrderTypes, setItemNumbers, setOrderNumbers } from '../../redux/reducers/orderReducer';
+import { setFilteredOrders, setOrderTypes, setItemNumbers, setOrderNumbers, setError } from '../../redux/reducers/orderReducer';
 import { RootState } from '../../redux/store';
 import { filterSearch, ITEM_REGEX } from '../../utils/utils';
 import CheckBoxes from './CheckBoxes';
@@ -19,7 +19,7 @@ const Modal: React.FC<Props> = ({ showFilter, setshowFilter }) => {
   const { allOrders, itemNumbers, orderNumbers, orderTypes } = useSelector((state: RootState) => state.orders)
   
   const dispatch = useDispatch()
-
+  const formRef = useRef<HTMLFormElement>(null);
   const [isValidItem, setisValidItem] = useState(false)
   const [isItemInputFocus, setIsItemInputFocus] = useState(false)
 
@@ -42,15 +42,27 @@ const Modal: React.FC<Props> = ({ showFilter, setshowFilter }) => {
                     <p className="text-xs px-2">9 parameters available</p>
                   </div>
                   <button onClick={() => {
-                    console.log('handle later')
+                    formRef.current && formRef.current!.reset()
+                    dispatch(setOrderNumbers([]));
+                    dispatch(setItemNumbers([]))
+                    dispatch(setOrderTypes([]))
                   }} className="side-btn underline hover:text-blue-500 pl-2 text-xs">Reset all</button>
                 </div>
-                <form className='p-4' onSubmit={(e: React.FormEvent) => {
+                <form className='p-4' ref={formRef} onSubmit={(e: React.FormEvent) => {
                   e.preventDefault()
-                  console.log("submit")
-                  const data = filterSearch(allOrders, itemNumbers, orderNumbers, orderTypes)
-                  console.log(data, 'data');
-                  data.length && dispatch(setFilteredOrders(data))
+                  if (allOrders.length > 0) {
+                    const data = filterSearch(allOrders, itemNumbers, orderNumbers, orderTypes)
+                    if (data.length > 0) {
+                    dispatch(setFilteredOrders(data))
+                    dispatch(setError(''))
+                  }else {
+                    dispatch(setError("No result found!"));
+                  }      
+                  } else {
+                    alert("Fetch the data before trying to search!")
+                  }
+                 
+                  
                 }}>
                   <details className='cursor-pointer details-container'>
                     <summary className='summary-det'><span className='font-bold'>Item</span> <span className="ico-details"><FaAngleDown /></span> </summary>
@@ -65,7 +77,7 @@ const Modal: React.FC<Props> = ({ showFilter, setshowFilter }) => {
                       }}
                     onFocus={() => setIsItemInputFocus(true)}
                     onBlur={() => setIsItemInputFocus(false)} />
-                     {!isValidItem && isItemInputFocus && (
+                     {!isValidItem && isItemInputFocus && itemNumbers.length > 0 && (
                 <p className="form-input-helper text-red-500 text-xs">
                   item must be at least 4 digits (Ex. 0001)
                 </p>
@@ -106,16 +118,12 @@ const Modal: React.FC<Props> = ({ showFilter, setshowFilter }) => {
                   </details>
 
                   <div className="absolute w-11/12  bottom-0 block">
-                    <button className="lightGray text-primary py-2 px-4 float-left" onClick={(e) => {
-                      console.log(e);
-                  
+                    <p className="lightGray text-primary py-2 px-4 float-left" onClick={(e) => {
                     }
-                    }>Cancel</button>
+                    }>Cancel</p>
                     <button type='submit' disabled={!isValidItem} className="bg-primary font-bold disabled:bg-gray-300 disabled:text-darkPrimary text-white py-2 px-4 hover:bg-blue-600 float-right">Apply</button>
                   </div>
-
                 </form>
-                {/* <button className="absolute top-0 right-0 m-2" onClick={() => setshowFilter(false)}>X</button> */}
               </div>
             </div>
           </div>
