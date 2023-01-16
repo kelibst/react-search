@@ -1,0 +1,502 @@
+[
+ {
+ "orderId": "0001",
+ "type": "CAO",
+ "item": "0001",
+ "category": "Category 1",
+ "description": "Description 1",
+ "status": "status 1",
+ "createdOn": "2020-07-13T11:34:36.419Z",
+ "pickDate": "2020-04-27T17:34:08.016Z"
+ },
+ {
+ "orderId": "0002",
+ "type": "SFO",
+ "item": "0002",
+ "category": "Category 2",
+ "description": "Description 2",
+ "status": "status 2",
+ "createdOn": "2020-08-10T14:33:11.788Z",
+ "pickDate": "2020-12-27T17:00:33.527Z"
+ },
+ {
+ "orderId": "0003",
+ "type": "EDF",
+ "item": "0003",
+ "category": "Category 3",
+ "description": "Description 3",
+ "status": "status 3",
+ "createdOn": "2020-12-16T22:42:20.598Z",
+ "pickDate": "2020-09-05T08:55:15.943Z"
+ },
+ {
+ "orderId": "0004",
+ "type": "CAO",
+ "item": "0004",
+ "category": "Category 4",
+ "description": "Description 4",
+ "status": "status 4",
+ "createdOn": "2020-07-31T05:58:58.744Z",
+ "pickDate": "2020-10-18T12:53:39.868Z"
+ },
+ {
+ "orderId": "0005",
+ "type": "SFO",
+ "item": "0005",
+ "category": "Category 5",
+ "description": "Description 5",
+ "status": "status 5",
+ "createdOn": "2020-08-19T05:14:22.296Z",
+ "pickDate": "2020-07-11T01:44:01.375Z"
+ },
+ {
+ "orderId": "0006",
+ "type": "EDF",
+ "item": "0006",
+ "category": "Category 6",
+ "description": "Description 6",
+ "status": "status 6",
+ "createdOn": "2020-09-29T10:05:27.818Z",
+ "pickDate": "2020-10-22T16:04:36.840Z"
+ },
+ {
+ "orderId": "0007",
+ "type": "CAO",
+ "item": "0007",
+ "category": "Category 7",
+ "description": "Description 7",
+ "status": "status 7",
+ "createdOn": "2020-12-12T03:43:07.613Z",
+ "pickDate": "2020-02-01T02:04:15.108Z"
+ },
+ {
+ "orderId": "0008",
+ "type": "SFO",
+ "item": "0008",
+ "category": "Category 8",
+ "description": "Description 8",
+ "status": "status 8",
+ "createdOn": "2020-05-11T11:35:22.194Z",
+ "pickDate": "2020-09-26T13:05:37.126Z"
+ },
+ {
+ "orderId": "0009",
+ "type": "EDF",
+ "item": "0009",
+ "category": "Category 9",
+ "description": "Description 9",
+ "status": "status 9",
+ "createdOn": "2020-05-21T07:45:43.420Z",
+ "pickDate": "2020-03-07T05:33:22.448Z"
+ },
+ {
+ "orderId": "0010",
+ "type": "CAO",
+ "item": "0010",
+ "category": "Category 10",
+ "description": "Description 10",
+ "status": "status 10",
+ "createdOn": "2020-01-08T04:04:14.379Z",
+ "pickDate": "2020-09-01T03:34:52.970Z"
+ },
+ {
+ "orderId": "0011",
+ "type": "SFO",
+ "item": "0011",
+ "category": "Category 11",
+ "description": "Description 11",
+ "status": "status 11",
+ "createdOn": "2020-06-23T16:57:22.798Z",
+ "pickDate": "2020-06-07T21:13:09.246Z"
+ },
+ {
+ "orderId": "0012",
+ "type": "EDF",
+ "item": "0012",
+ "category": "Category 12",
+ "description": "Description 12",
+ "status": "status 12",
+ "createdOn": "2020-02-20T10:22:13.112Z",
+ "pickDate": "2020-01-24T15:49:21.435Z"
+ },
+ {
+ "orderId": "0013",
+ "type": "CAO",
+ "item": "0013",
+ "category": "Category 13",
+ "description": "Description 13",
+ "status": "status 13",
+ "createdOn": "2020-01-31T17:20:04.596Z",
+ "pickDate": "2020-06-23T02:18:53.757Z"
+ },
+ {
+ "orderId": "0014",
+ "type": "SFO",
+ "item": "0014",
+ "category": "Category 14",
+ "description": "Description 14",
+ "status": "status 14",
+ "createdOn": "2020-08-06T03:35:28.749Z",
+ "pickDate": "2020-04-12T14:41:54.538Z"
+ },
+ {
+ "orderId": "0015",
+ "type": "EDF",
+ "item": "0015",
+ "category": "Category 15",
+ "description": "Description 15",
+ "status": "status 15",
+ "createdOn": "2020-08-05T05:07:46.506Z",
+ "pickDate": "2020-01-16T12:42:30.562Z"
+ },
+ {
+ "orderId": "0016",
+ "type": "CAO",
+ "item": "0016",
+ "category": "Category 16",
+ "description": "Description 16",
+ "status": "status 16",
+ "createdOn": "2020-03-29T08:24:28.894Z",
+ "pickDate": "2020-12-08T10:21:42.912Z"
+ },
+ {
+ "orderId": "0017",
+ "type": "SFO",
+ "item": "0017",
+ "category": "Category 17",
+ "description": "Description 17",
+ "status": "status 17",
+ "createdOn": "2020-06-27T19:55:56.515Z",
+ "pickDate": "2020-08-04T16:31:52.443Z"
+ },
+ {
+ "orderId": "0018",
+ "type": "EDF",
+ "item": "0018",
+ "category": "Category 18",
+ "description": "Description 18",
+ "status": "status 18",
+ "createdOn": "2020-03-05T20:39:41.009Z",
+ "pickDate": "2020-03-13T10:58:09.570Z"
+ },
+ {
+ "orderId": "0019",
+ "type": "CAO",
+ "item": "0019",
+ "category": "Category 19",
+ "description": "Description 19",
+ "status": "status 19",
+ "createdOn": "2020-07-01T14:02:20.415Z",
+ "pickDate": "2020-05-28T14:06:30.674Z"
+ },
+ {
+ "orderId": "0020",
+ "type": "SFO",
+ "item": "0020",
+ "category": "Category 20",
+ "description": "Description 20",
+ "status": "status 20",
+ "createdOn": "2020-09-20T05:24:00.662Z",
+ "pickDate": "2020-01-13T02:51:48.253Z"
+ },
+ {
+ "orderId": "0021",
+ "type": "EDF",
+ "item": "0021",
+ "category": "Category 21",
+ "description": "Description 21",
+ "status": "status 21",
+ "createdOn": "2020-01-10T21:38:14.738Z",
+ "pickDate": "2020-03-01T08:11:13.287Z"
+ },
+ {
+ "orderId": "0022",
+ "type": "CAO",
+ "item": "0022",
+ "category": "Category 22",
+ "description": "Description 22",
+ "status": "status 22",
+ "createdOn": "2020-12-06T15:08:43.967Z",
+ "pickDate": "2020-12-29T22:52:52.537Z"
+ },
+ {
+ "orderId": "0023",
+ "type": "SFO",
+ "item": "0023",
+ "category": "Category 23",
+ "description": "Description 23",
+ "status": "status 23",
+ "createdOn": "2020-02-13T21:49:43.638Z",
+ "pickDate": "2020-04-29T06:06:17.692Z"
+ },
+ {
+ "orderId": "0024",
+ "type": "EDF",
+ "item": "0024",
+ "category": "Category 24",
+ "description": "Description 24",
+ "status": "status 24",
+ "createdOn": "2020-10-07T09:02:50.902Z",
+ "pickDate": "2020-02-22T19:25:41.258Z"
+ },
+ {
+ "orderId": "0025",
+ "type": "CAO",
+ "item": "0025",
+ "category": "Category 25",
+ "description": "Description 25",
+ "status": "status 25",
+ "createdOn": "2020-08-22T01:13:41.347Z",
+ "pickDate": "2020-06-04T05:14:17.288Z"
+ },
+ {
+ "orderId": "0026",
+ "type": "SFO",
+ "item": "0026",
+ "category": "Category 26",
+ "description": "Description 26",
+ "status": "status 26",
+ "createdOn": "2020-05-21T00:19:20.404Z",
+ "pickDate": "2020-04-17T17:06:14.069Z"
+ },
+ {
+ "orderId": "0027",
+ "type": "EDF",
+ "item": "0027",
+ "category": "Category 27",
+ "description": "Description 27",
+ "status": "status 27",
+ "createdOn": "2020-04-27T19:07:45.662Z",
+ "pickDate": "2020-02-05T10:37:07.301Z"
+ },
+ {
+ "orderId": "0028",
+ "type": "CAO",
+ "item": "0028",
+ "category": "Category 28",
+ "description": "Description 28",
+ "status": "status 28",
+ "createdOn": "2020-12-11T22:41:11.352Z",
+ "pickDate": "2020-12-08T11:20:20.707Z"
+ },
+ {
+ "orderId": "0029",
+ "type": "SFO",
+ "item": "0029",
+ "category": "Category 29",
+ "description": "Description 29",
+ "status": "status 29",
+ "createdOn": "2020-02-14T21:58:32.352Z",
+ "pickDate": "2020-09-09T01:18:48.568Z"
+ },
+ {
+ "orderId": "0030",
+ "type": "EDF",
+ "item": "0030",
+ "category": "Category 30",
+ "description": "Description 30",
+ "status": "status 30",
+ "createdOn": "2020-10-31T09:25:25.310Z",
+ "pickDate": "2020-07-03T00:52:20.889Z"
+ },
+ {
+ "orderId": "0031",
+ "type": "CAO",
+ "item": "0031",
+ "category": "Category 31",
+ "description": "Description 31",
+ "status": "status 31",
+ "createdOn": "2020-03-23T11:54:15.734Z",
+ "pickDate": "2020-08-03T22:31:22.024Z"
+ },
+ {
+ "orderId": "0032",
+ "type": "SFO",
+ "item": "0032",
+ "category": "Category 32",
+ "description": "Description 32",
+ "status": "status 32",
+ "createdOn": "2020-10-03T05:13:15.246Z",
+ "pickDate": "2020-07-25T23:51:20.241Z"
+ },
+ {
+ "orderId": "0033",
+ "type": "EDF",
+ "item": "0033",
+ "category": "Category 33",
+ "description": "Description 33",
+ "status": "status 33",
+ "createdOn": "2020-01-09T08:58:35.734Z",
+ "pickDate": "2020-09-28T23:35:08.022Z"
+ },
+ {
+ "orderId": "0034",
+ "type": "CAO",
+ "item": "0034",
+ "category": "Category 34",
+ "description": "Description 34",
+ "status": "status 34",
+ "createdOn": "2020-05-25T06:42:52.119Z",
+ "pickDate": "2020-04-07T09:23:57.839Z"
+ },
+ {
+ "orderId": "0035",
+ "type": "SFO",
+ "item": "0035",
+ "category": "Category 35",
+ "description": "Description 35",
+ "status": "status 35",
+ "createdOn": "2020-09-21T07:07:49.232Z",
+ "pickDate": "2020-05-27T23:18:46.702Z"
+ },
+ {
+ "orderId": "0036",
+ "type": "EDF",
+ "item": "0036",
+ "category": "Category 36",
+ "description": "Description 36",
+ "status": "status 36",
+ "createdOn": "2020-10-14T04:15:57.378Z",
+ "pickDate": "2020-09-16T00:03:47.539Z"
+ },
+ {
+ "orderId": "0037",
+ "type": "CAO",
+ "item": "0037",
+ "category": "Category 37",
+ "description": "Description 37",
+ "status": "status 37",
+ "createdOn": "2020-07-14T07:45:13.116Z",
+ "pickDate": "2020-07-02T04:34:32.540Z"
+ },
+ {
+ "orderId": "0038",
+ "type": "SFO",
+ "item": "0038",
+ "category": "Category 38",
+ "description": "Description 38",
+ "status": "status 38",
+ "createdOn": "2020-01-02T04:51:58.998Z",
+ "pickDate": "2020-07-28T13:26:35.307Z"
+ },
+ {
+ "orderId": "0039",
+ "type": "EDF",
+ "item": "0039",
+ "category": "Category 39",
+ "description": "Description 39",
+ "status": "status 39",
+ "createdOn": "2020-06-19T19:26:01.250Z",
+ "pickDate": "2020-02-05T00:12:21.500Z"
+ },
+ {
+ "orderId": "0040",
+ "type": "CAO",
+ "item": "0040",
+ "category": "Category 40",
+ "description": "Description 40",
+ "status": "status 40",
+ "createdOn": "2020-03-26T05:53:55.916Z",
+ "pickDate": "2020-03-26T14:57:56.719Z"
+ },
+ {
+ "orderId": "0041",
+ "type": "SFO",
+ "item": "0041",
+ "category": "Category 41",
+ "description": "Description 41",
+ "status": "status 41",
+ "createdOn": "2020-01-28T18:47:39.556Z",
+ "pickDate": "2020-01-10T18:08:44.607Z"
+ },
+ {
+ "orderId": "0042",
+ "type": "EDF",
+ "item": "0042",
+ "category": "Category 42",
+ "description": "Description 42",
+ "status": "status 42",
+ "createdOn": "2020-05-27T16:15:48.590Z",
+ "pickDate": "2020-03-13T10:32:26.986Z"
+ },
+ {
+ "orderId": "0043",
+ "type": "CAO",
+ "item": "0043",
+ "category": "Category 43",
+ "description": "Description 43",
+ "status": "status 43",
+ "createdOn": "2020-03-30T10:19:05.162Z",
+ "pickDate": "2020-09-30T19:44:42.073Z"
+ },
+ {
+ "orderId": "0044",
+ "type": "SFO",
+ "item": "0044",
+ "category": "Category 44",
+ "description": "Description 44",
+ "status": "status 44",
+ "createdOn": "2020-05-14T22:48:53.412Z",
+ "pickDate": "2020-08-08T23:04:58.173Z"
+ },
+ {
+ "orderId": "0045",
+ "type": "EDF",
+ "item": "0045",
+ "category": "Category 45",
+ "description": "Description 45",
+ "status": "status 45",
+ "createdOn": "2020-03-12T08:29:53.562Z",
+ "pickDate": "2020-01-29T16:35:20.523Z"
+ },
+ {
+ "orderId": "0046",
+ "type": "CAO",
+ "item": "0046",
+ "category": "Category 46",
+ "description": "Description 46",
+ "status": "status 46",
+ "createdOn": "2020-01-29T05:26:11.370Z",
+ "pickDate": "2020-04-16T17:50:08.037Z"
+ },
+ {
+ "orderId": "0047",
+ "type": "SFO",
+ "item": "0047",
+ "category": "Category 47",
+ "description": "Description 47",
+ "status": "status 47",
+ "createdOn": "2020-09-21T19:11:59.650Z",
+ "pickDate": "2020-11-29T03:03:35.037Z"
+ },
+ {
+ "orderId": "0048",
+ "type": "EDF",
+ "item": "0048",
+ "category": "Category 48",
+ "description": "Description 48",
+ "status": "status 48",
+ "createdOn": "2020-02-16T12:20:16.363Z",
+ "pickDate": "2020-01-18T22:51:01.934Z"
+ },
+ {
+ "orderId": "0049",
+ "type": "CAO",
+ "item": "0049",
+ "category": "Category 49",
+ "description": "Description 49",
+ "status": "status 49",
+ "createdOn": "2020-09-26T16:04:35.510Z",
+ "pickDate": "2020-05-04T15:36:52.954Z"
+ },
+ {
+ "orderId": "0050",
+ "type": "SFO",
+ "item": "0050",
+ "category": "Category 50",
+ "description": "Description 50",
+ "status": "status 50",
+ "createdOn": "2020-08-09T23:57:15.550Z",
+ "pickDate": "2020-09-27T09:45:56.318Z"
+ }
+]
