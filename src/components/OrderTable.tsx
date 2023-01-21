@@ -7,7 +7,6 @@ interface Props {
 }
 
 const OrderTable: React.FC<Props> = memo((props) => {
-  console.log('render search table');
   
   return (
     <table className="order_table">
