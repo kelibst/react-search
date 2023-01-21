@@ -1,4 +1,4 @@
-import React from "react";
+import {memo} from "react";
 import { OrderInterface } from "../redux/reducers/orderReducer";
 
 
@@ -6,7 +6,9 @@ interface Props {
   orders: OrderInterface[];
 }
 
-const OrderTable: React.FC<Props> = (props) => {
+const OrderTable: React.FC<Props> = memo((props) => {
+  console.log('render search table');
+  
   return (
     <table className="order_table">
       <thead>
@@ -45,6 +47,6 @@ const OrderTable: React.FC<Props> = (props) => {
       </tbody>
     </table>
   );
-};
+});
 
 export default OrderTable;
